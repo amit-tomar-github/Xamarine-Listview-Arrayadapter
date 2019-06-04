@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_width="fill_parent">
+            <EditText
+                android:hint="Scan Case"
+                android:id="@+id/txtScanCase"
+                android:layout_height="wrap_content"
+                
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeOptions="actionGo|flagNoFullscreen"
+                android:layout_width="fill_parent" />
+          <TextView
+				 android:id="@+id/txtScanCount"
+                android:text="Scan Count : 0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+			 <Button
+                android:layout_marginTop="5dp"
+                android:text="Server Setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnServerSetting" />
+			<ListView
+				android:id="@+id/listViewScanCase"
+				android:layout_width="match_parent"
+				android:layout_height="400dp"
+				
+			
+				 />
+          
+        </LinearLayout>
+		
+    
+</RelativeLayout>
